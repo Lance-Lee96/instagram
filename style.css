@@ -4,10 +4,39 @@ h2{
 /*클래스 선택자를 쓸 때는 .클래스값으로 써야 한다. */
 .highlight{
     border: solid;
+   
 }
 /*아이디 선택자를 쓸 때는 #아이디값으로 써야함*/
 #profile{
     border : solid;
-    color : blue;
-    
+    color : blue;   
 }
+.thumbnail_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.thumbnail{
+    width:100%;
+}
+
+#stat_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top : solid 1px grey;
+    border-bottom : solid 1px grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.circle_pic{
+    border : solid 1px white;
+    border-radius: 50%;
+}
+.highlight_pic{
+    width: "30px";
+    height: "30px";
+}
+
+
+    
