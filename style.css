@@ -3,14 +3,17 @@
     grid-template-columns: 4fr 7fr 4fr;
     height:30px;
     border-bottom: solid gray 0.1px;
-    margin-bottom: 10px;
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    height:10vw;
+    min-height: 3vw;
 }
 
 #top img{
     margin-left: auto;
     margin-right: auto;
 
-    height: 10;
+    height: 100%;
     object-fit: contain;
 }
 #top input{
@@ -34,7 +37,9 @@ i{
     color: grey;
 }
 #top i{
-    font-size: 14px;
+    font-size: 4vw;
+    padding-top: 1vw;
+    margin-top: 1vw;
 }
 #top div{
     text-align: center;
