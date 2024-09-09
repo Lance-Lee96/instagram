@@ -1,22 +1,23 @@
-#top{
+#top {
     display: grid;
     grid-template-columns: 4fr 7fr 4fr;
-    height:30px;
+    height: 30px;
     border-bottom: solid gray 0.1px;
     padding-bottom: 1vw;
     margin-bottom: 3vw;
-    height:10vw;
+    height: 10vw;
     min-height: 3vw;
 }
 
-#top img{
+#top img {
     margin-left: auto;
     margin-right: auto;
 
-    height: 100%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
 }
-#top input{
+
+#top input {
     height: 60%;
     width: 95%;
 
@@ -33,90 +34,101 @@
     font-size: 10px;
     font-weight: 100;
 }
-i{
+
+i {
     color: grey;
 }
-#top i{
-    
+
+#top i {
+
     font-size: 4vw;
     padding-top: auto;
-    
+
 }
-#top div{
+
+#top div {
     text-align: center;
     padding-top: 6px;
 }
 
 /*클래스 선택자를 쓸 때는 .클래스값으로 써야 한다. */
-.highlight{
+.highlight {
     text-align: center;
-    
+
 }
+
 /*아이디 선택자를 쓸 때는 #아이디값으로 써야함*/
-#profile{
+#profile {
     display: grid;
-    grid-template-columns: 1fr 3.5fr;     
+    grid-template-columns: 1fr 3.5fr;
 }
-#profile_pic{
+
+#profile_pic {
     width: 50px;
     height: 50px;
 }
-#profile_info{
+
+#profile_info {
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 50px;
 }
-#id{
-    font-size:18px;
-    font-weight:100;
+
+#id {
+    font-size: 18px;
+    font-weight: 100;
 }
-button{
-    height:80%;
-    width:95%;
+
+button {
+    height: 80%;
+    width: 95%;
 
     font-size: 10px;
     background-color: white;
-    border : 1px solid gray;
+    border: 1px solid gray;
     border-radius: 3px;
 }
-.thumbnail_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;    
-}
 
-.thumbnail{
-    width:100%;
-}
-
-#stat_bar{
+.thumbnail_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-top : solid 1px grey;
-    border-bottom : solid 1px grey;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+#stat_bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
 }
-.circle_pic{
-    border : solid 1px white;
+
+.circle_pic {
+    border: solid 1px white;
     border-radius: 50%;
 
 }
-.highlight_pic{
-    width:35px;
-    height:35px;
-    border : solid 1px white;
+
+.highlight_pic {
+    width: 35px;
+    height: 35px;
+    border: solid 1px white;
     border-radius: 50%;
     object-fit: cover;
     margin: auto;
 }
 
-#highlight_area{
+#highlight_area {
     display: grid;
     grid-template-columns: 45px 45px 1fr;
 }
 
-#sub_icons{
+#sub_icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
@@ -125,8 +137,6 @@ button{
     height: 30px;
 }
 
-.selected{
+.selected {
     border-bottom: solid grey 3px;
 }
-
-    

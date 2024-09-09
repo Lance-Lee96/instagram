@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+    <script src="script.js"></script>
 </head>
+
 <body>
     <div id="top">
-        <img src="image\instagramlogo.png"/>
-        <input type="search" value="🔍검색"/>
+        <img src="image\instagramlogo.png" />
+        <input type="search" value="🔍검색" />
         <div>
             <i class="fab fa-android"></i>
             <i class="fas fa-home"></i>
@@ -23,100 +26,102 @@
         <div id="profile_pic">
             <img src="image/profile.jpg" width="50px" class="circle_pic">
         </div>
-    <!-- <br>태그는 줄바꿈 기능이 있다.-->
-    <!-- <p> 태그는 문단을 나누는 태그 paragrapth 의 약자이다.
+        <!-- <br>태그는 줄바꿈 기능이 있다.-->
+        <!-- <p> 태그는 문단을 나누는 태그 paragrapth 의 약자이다.
         p태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
         옆에 글이 올 수 없다.-->
         <div id="profile_info">
-            <div id="id">half_bottle
-            <i class="fas fa-cog"></i></div>
+            <div id="id">
+                <span>half_bottle</span>
+                <i class="fas fa-cog"></i>
+            </div>
             <button>프로필 편집</button>
         </div>
     </div>
-<!-- css를 공부하면 버튼의 크기와 색상, 모양을 취향대로 수정할 수 있다.-->
-<div>
-<p>
-    <!-- <strong> 볼드체 구현-->
-    <strong>
-    반병현(Byunghyun Ban)<br/></strong>
-    작가
-    </p>
-    <p>
-        <a href="https://needleworm.github.io">needleworm.github.io</a>
-    </p>
-</div>
-<div id="highlight_area">
-    <!-- 높이 35px로 하이라이트 이미지 2개 넣기-->
-     <div class="highlight">
-        <div>
-        <img src="image/hl1.jpg" class="highlight_pic">
-        </div>
-        <!-- window키 + ;  -->
-        <div>😊</div>
+    <!-- css를 공부하면 버튼의 크기와 색상, 모양을 취향대로 수정할 수 있다.-->
+    <div>
+        <p>
+            <!-- <strong> 볼드체 구현-->
+            <strong id="userInfo">
+                반병현(Byunghyun Ban)<br></strong>
+            <span id="summary">작가</span>
+        </p>
+        <p id="profileDetail">
+            <a href="https://needleworm.github.io">needleworm.github.io</a>
+        </p>
     </div>
-    <div class="highlight">
-        <div >
-        <img src="image/hl2.jpg" class="highlight_pic">
+    <div id="highlight_area">
+        <!-- 높이 35px로 하이라이트 이미지 2개 넣기-->
+        <div class="highlight">
+            <div>
+                <img src="image/hl1.jpg" class="highlight_pic">
+            </div>
+            <!-- window키 + ;  -->
+            <div>😊</div>
         </div>
-        <div>😍</div>
+        <div class="highlight">
+            <div>
+                <img src="image/hl2.jpg" class="highlight_pic">
+            </div>
+            <div>😍</div>
+        </div>
+        <div></div>
     </div>
-    <div></div>
-</div>
-<div id="stat_bar">
+    <div id="stat_bar">
         <div class="stat">
-            게시물<br/>
+            게시물<br />
             133
         </div>
         <div class="stat">
-            팔로워<br/>
+            팔로워<br />
             408
         </div>
         <div class="stat">
-            팔로우<br/>
+            팔로우<br />
             189
-        </div>      
-</div>
-<div id="sub_icons">
-    <div class="selected"> 
-        <i class="fas fa-border-all"></i>
+        </div>
+    </div>
+    <div id="sub_icons">
+        <div class="selected">
+            <i class="fas fa-border-all"></i>
+        </div>
+        <div>
+            <i class="fas fa-film"></i>
+        </div>
+        <div>
+            <i class="far fa-play-circle"></i>
+        </div>
+        <div>
+            <i class="far fa-bookmark"></i>
+        </div>
+        <div>
+            <i class="fas fa-user-tag"></i>
+        </div>
+
     </div>
     <div>
-        <i class="fas fa-film"></i>
-    </div>
-    <div>
-        <i class="far fa-play-circle"></i>
-    </div>
-    <div>
-        <i class="far fa-bookmark"></i>
-    </div>
-    <div>
-        <i class="fas fa-user-tag"></i>
-    </div>
-    
-</div>
-<div>
-    <!-- 퍼센티지로 지정된 값은 화면 크기에 따라
+        <!-- 퍼센티지로 지정된 값은 화면 크기에 따라
      이미지의 크기가 바뀐다.
      이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가
      바뀌는 웹 페이지를 반응형 웹이라고 한다.
      모든 웹 페이지 외주 제작에서 반응형 웹이 가장 비싼 가격으로
      거래되고 있다. 가장 수요가 높고 난이도가 높기 때문이다.-->
-     <div class="thumbnail_grid">
-        <img src="image/thumbnails/1.jpg" class="thumbnail">
-        <img src="image/thumbnails/2.jpg" class="thumbnail">
-        <img src="image/thumbnails/3.jpg" class="thumbnail">
-     </div>
-    <div class="thumbnail_grid">
-        <img src="image/thumbnails/4.jpg" class="thumbnail">
-        <img src="image/thumbnails/5.jpg" class="thumbnail">
-        <img src="image/thumbnails/6.jpg" class="thumbnail">
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/1.jpg" class="thumbnail">
+            <img src="image/thumbnails/2.jpg" class="thumbnail">
+            <img src="image/thumbnails/3.jpg" class="thumbnail">
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/4.jpg" class="thumbnail">
+            <img src="image/thumbnails/5.jpg" class="thumbnail">
+            <img src="image/thumbnails/6.jpg" class="thumbnail">
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/7.jpg" class="thumbnail">
+            <img src="image/thumbnails/8.jpg" class="thumbnail">
+            <img src="image/thumbnails/9.jpg" class="thumbnail">
+        </div>
     </div>
-    <div class="thumbnail_grid">
-        <img src="image/thumbnails/7.jpg" class="thumbnail">
-        <img src="image/thumbnails/8.jpg" class="thumbnail">
-        <img src="image/thumbnails/9.jpg" class="thumbnail">
-    </div>
-</div>
 </body>
-</html>
 
+</html>
